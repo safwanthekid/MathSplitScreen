@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/TopButtonThree"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Button 3"
+                android:rotation="180"
+                android:background="@drawable/my_button_rd"
+                android:onClick="Top3"/>
+
+            <Button
+                android:id="@+id/TopButtonOne"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/TopButtonOne"
+                android:layout_weight="1"
+                android:text="Button 1"
+                android:rotation="180"
+                android:background="@drawable/my_button_rd"
+                android:onClick="Top1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/TopButtonTwo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Button 2"
+                android:rotation="180"
+                android:background="@drawable/my_button_rd"
+                android:onClick="Top2"/>
+
+            <Button
+                android:id="@+id/TopButtonZero"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/TopButtonTwo"
+                android:layout_weight="1"
+                android:text="Button 0"
+                android:rotation="180"
+                android:background="@drawable/my_button_rd"
+                android:onClick="Top0"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:background="#ffc7c7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrect!"
+            android:id="@+id/TopIncorrect"
+            android:textColor="#ffc7c7"
+            android:layout_marginRight="30dp"
+            android:rotation="180"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="problem thing"
+            android:textSize="22sp"
+            android:rotation="180"
+            android:id="@+id/TopText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct!"
+            android:id="@+id/TopCorrect"
+            android:textColor="#ffc7c7"
+            android:layout_marginLeft="30dp"
+            android:rotation="180"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/bar5">
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/bar4">
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/bar3">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/bar2">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/bar1">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:background="#60caf6">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct!"
+            android:layout_marginRight="30dp"
+            android:textColor="#60caf6"
+            android:id="@+id/BottomCorrect"/>
+        <TextView
+            android:id="@+id/BottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="problem thing"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrect!"
+            android:id="@+id/BottomIncorrect"
+            android:textColor="#60caf6"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/BottomZero"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Button 0"
+                android:onClick="Bottom0"
+                android:background="@drawable/my_button_bg"
+                />
+
+            <Button
+                android:id="@+id/BottomTwo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/BottomButtonOne"
+                android:layout_weight="1"
+                android:text="Button 2"
+                android:onClick="Bottom2"
+                android:background="@drawable/my_button_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BottomOne"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Button 1"
+                android:onClick="Bottom1"
+                android:background="@drawable/my_button_bg"
+                />
+
+            <Button
+                android:id="@+id/BottomThree"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/BottomButtonTwo"
+                android:layout_weight="1"
+                android:text="Button 3"
+                android:onClick="Bottom3"
+                android:background="@drawable/my_button_bg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
